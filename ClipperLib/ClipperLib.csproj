@@ -3,10 +3,12 @@
     <TargetFrameworks>net40;netstandard1.4</TargetFrameworks>
     <AssemblyName>clipper_library</AssemblyName>
     <OutputType>library</OutputType>
+    
+    <Version Condition="$(BuildVersion) != ''">$(BuildVersion)</Version>
+    <Version Condition="$(Version) == ''">6.4.2-dev</Version>
 
     <IsPackable>true</IsPackable>
     <PackagedId>Clipper</PackagedId>
-    <PackageVersion>6.4.2</PackageVersion>
     <Title>Clipper</Title>
     <Authors>Angus Johnson</Authors>
     <PackageLicenseUrl>http://www.boost.org/LICENSE_1_0.txt</PackageLicenseUrl>
